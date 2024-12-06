@@ -41,6 +41,7 @@ while True:
 
 # potential new obstacles must be on the original path
 original_path = visited
+original_path.remove(start)
 ans = 0
 for additional_obs in original_path:
     obs.add(additional_obs)
