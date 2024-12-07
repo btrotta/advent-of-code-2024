@@ -16,5 +16,5 @@ just travel the same route as in part a). This restricts the number of locations
 
 ## Day 7
 
-Use `itertools.product` to iterate over the combinations of iterators. Since the result can only increase as the calculation 
-progresses, we can stop early if the current result already exceeds the target.
+Use depth-first search to evaluate "paths" of operators. Since each operation increases the sum, we can stop checking 
+a path if the current sum already exceeds the target.
