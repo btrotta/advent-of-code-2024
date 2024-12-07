@@ -13,3 +13,8 @@ for sorting.
 
 For part b, note that potential new obstacles must be on the original path found in part a (otherwise the guard would 
 just travel the same route as in part a). This restricts the number of locations we need to check.
+
+## Day 7
+
+Use `itertools.product` to iterate over the combinations of iterators. Since the result can only increase as the calculation 
+progresses, we can stop early if the current result already exceeds the target.
