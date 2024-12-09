@@ -18,3 +18,9 @@ just travel the same route as in part a). This restricts the number of locations
 
 Use depth-first search to evaluate "paths" of operators. Since each operation increases the sum, we can stop checking 
 a path if the current sum already exceeds the target.
+
+
+## Day 9
+
+The checksum can be calculated efficiently by using Gauss' method to sum a range of consecutive numbers. Calculate the
+original checksum while parsing the original file layout, then update it as files move.
