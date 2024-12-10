@@ -24,3 +24,9 @@ a path if the current sum already exceeds the target.
 
 The checksum can be calculated efficiently by using Gauss' method to sum a range of consecutive numbers. Calculate the
 original checksum while parsing the original file layout, then update it as files move.
+
+## Day 10
+
+Use breadth-first search. In part a, we only need to find a single path from each trailhead, so we do not need to re-visit 
+previously visited locations. In part b, we want to find all the paths, so we do re-visit previously visited locations.
+
