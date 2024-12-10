@@ -15,8 +15,8 @@ for r in range(len(arr)):
                 if arr[x][y] == arr[r][c] + 1:
                     edges[r, c].append((x, y))
 
+
 ans = 0
-trails = set()
 for h in heads:
     visited = set()
     to_visit = deque([h])
@@ -24,11 +24,10 @@ for h in heads:
         curr = to_visit.popleft()
         if curr not in visited:
             visited.add(curr)
+            r, c = curr
+            if arr[r][c] == 9:
+                ans += 1
             for neighbour in edges[curr]:
-                r, c = neighbour
-                if arr[r][c] == 9:
-                    trails.add((h, neighbour))
-                elif neighbour not in visited:
+                if neighbour not in visited:
                     to_visit.append(neighbour)
-print(len(trails))
-
+print(ans)

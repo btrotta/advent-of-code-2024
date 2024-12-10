@@ -20,11 +20,9 @@ for h in heads:
     to_visit = deque([h])
     while len(to_visit) > 0:
         curr = to_visit.popleft()
+        r, c = curr
+        if arr[r][c] == 9:
+            ans += 1
         for neighbour in edges[curr]:
-            r, c = neighbour
-            if arr[r][c] == 9:
-                ans += 1
-            else:
-                to_visit.append(neighbour)
-
+            to_visit.append(neighbour)
 print(ans)
