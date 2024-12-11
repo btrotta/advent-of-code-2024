@@ -2,7 +2,7 @@ from utilities import *
 
 arr = parse_multi_int(False)[0]
 
-cache = {(0, 1): 1}
+cache = {}
 
 
 def evaluate(num, num_blinks, cache):
