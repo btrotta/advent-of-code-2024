@@ -11,7 +11,6 @@ def evaluate(num, num_blinks, cache):
     if num_blinks == 0:
         ans = 1
     else:
-        # guaranteed to cycle through numbers whose lengths are powers of 2
         if num == 0:
             ans = evaluate(1, num_blinks - 1, cache)
         else:
