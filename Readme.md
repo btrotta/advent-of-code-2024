@@ -39,4 +39,4 @@ and for numbers between 5 and 9, the output after 2 blinks is an 8-digit number.
 with a list of single-digit numbers. For numbers between 10 and 99, after a single blink we have a list of 2 single-digit numbers. This 
 allows us to speed up our calculation by caching results for numbers < 100.
 For each member of the original array, we recursively calculate the size of the array it generates after 75 blinks. During the calculation, 
-we cache results for pairs `(number, num_blinks)` where number < 100.
+we cache results for pairs `(number, num_blinks)` where `number < 100`.
