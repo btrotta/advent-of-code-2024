@@ -35,8 +35,8 @@ previously visited locations. In part b, we want to find all the paths, so we do
 For part a, we can calculate the list directly. For part b, this is no longer feasible. However, we can use dynamic programming
 with caching. Note that for a number `n` whose length `k` is a power of 2, after  `log2(k)` blinks it will be transformed into a list of single-digit numbers.
 Now, for numbers < 5, the output after 1 blink is either 1 (if the original number is 0), or a 4-digit number, 
-and for numbers between 5 and 9, the output after 2 blinks is an 8-digit number. So after a small number of blinks, we are left 
-with a list of single-digit numbers. For numbers between 10 and 99, after a single blink we have a list of 2 single-digit numbers. This 
+and for numbers between 5 and 9, the output after 2 blinks is an 8-digit number. So, in either case, after a small number of blinks, 
+the original number is transformed into a list of single-digit numbers. For numbers between 10 and 99, after a single blink we have a list of 2 single-digit numbers. This 
 allows us to speed up our calculation by caching results for numbers < 100.
 For each member of the original array, we recursively calculate the size of the array it generates after 75 blinks. During the calculation, 
 we cache results for pairs `(number, num_blinks)` where `number < 100`.
