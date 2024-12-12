@@ -9,6 +9,7 @@ def get_val(r, c):
         return None
     return arr[r][c]
 
+
 # find connected components and label with distinct labels
 edges = {(r, c): [] for r in range(len(arr)) for c in range(len(arr[0]))}
 for r in range(len(arr)):
@@ -40,5 +41,4 @@ for r in range(len(arr)):
 ans = 0
 for a in areas:
     ans += areas[a] * perims[a]
-
 print(ans)

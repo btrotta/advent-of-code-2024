@@ -1,5 +1,3 @@
-import numpy as np
-
 from utilities import *
 from collections import defaultdict
 
@@ -10,6 +8,7 @@ def get_val(r, c):
     if r < 0 or r >= len(arr) or c < 0 or c >= len(arr[0]):
         return None
     return arr[r][c]
+
 
 # find connected components and label with distinct labels
 edges = {(r, c): [] for r in range(len(arr)) for c in range(len(arr[0]))}
@@ -65,5 +64,4 @@ for a in areas:
     if a == -1:
         continue
     ans += areas[a] * sides[a]
-
 print(ans)
