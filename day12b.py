@@ -45,7 +45,7 @@ for r in range(len(arr) - 1):
         if v_diff[i] != 0:
             if h_diff_r[i] != 0 or v_diff[i - 1] == 0:
                 sides[arr[r, i]] += 1
-            if h_diff_r1[i] != 0 or v_diff[i- 1] == 0:
+            if h_diff_r1[i] != 0 or v_diff[i - 1] == 0:
                 sides[arr[r + 1, i]] += 1
 for c in range(len(arr[0]) - 1):
     # consider edge to right of col c
