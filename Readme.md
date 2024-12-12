@@ -43,7 +43,7 @@ we cache results for pairs `(number, num_blinks)` where `number < 100`.
 
 ## Day 12
 
-Note that since different regions can have the same labels, we first simplify the array by relabelling distinct regions with distinct labels.
+Since different regions can have the same labels, we first simplify the array by relabelling distinct regions with distinct labels.
 We can do this by considering it as a graph and finding the connected components. For part a, we can then find the perimeters by iterating 
 over the array and, for each location, counting which of its neighbours have a different value.
 For part b, iterate separately over rows and columns, considering the edges between subsequent pairs of rows/columns.
