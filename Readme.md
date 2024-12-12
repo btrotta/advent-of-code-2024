@@ -50,5 +50,5 @@ For part b, iterate separately over rows and columns, considering the edges betw
 There will be a horizontal fence between 2 rows wherever the values are different across the rows (and similarly for the columns).
 When travelling along a row, a new side of a region starts either at the beginning of a section of fence 
 (i.e. where the current position has a horizontal fence above/below it, but the position to the left does not), 
-or when the region changes (i.e. the current position has a horizontal fence above/below it, and the postion to the left 
+or when the region changes (i.e. the current position has a horizontal fence above/below it, and the position to the left 
 belongs to a different region).
