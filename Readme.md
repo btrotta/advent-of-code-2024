@@ -40,3 +40,12 @@ the original number is transformed into a list of single-digit numbers. For numb
 allows us to speed up our calculation by caching results for numbers < 100.
 For each member of the original array, we recursively calculate the size of the array it generates after 75 blinks. During the calculation, 
 we cache results for pairs `(number, num_blinks)` where `number < 100`.
+
+## Day 12
+
+For part b, iterate separately over rows and columns, considering the edges between subsequent pairs of rows/columns.
+There will be a horizontal fence between 2 rows wherever the values are different across the rows (and similarly for the columns).
+When travelling along a row, a new side of a region starts either at the beginning of a section of fence 
+(i.e. where the current position has a horizontal fence above/below it, but the position to the left does not), 
+or when the region changes (i.e. the current position has a horizontal fence above/below it, and the postion to the left 
+belongs to a different region).
