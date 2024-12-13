@@ -52,3 +52,9 @@ When travelling along a row, a new side of a region starts either at the beginni
 (i.e. where the current position has a horizontal fence above/below it, but the position to the left does not), 
 or when the region changes (i.e. the current position has a horizontal fence above/below it, and the position to the left 
 belongs to a different region).
+
+## Day 13
+
+This requires solving a system of 2 linear equations. The only complications are that we need to check that the solution 
+is positive and integer-valued, and for part b, because the solutions can be very large we need to use 64-bit integers.
+
