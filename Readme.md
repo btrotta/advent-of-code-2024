@@ -58,3 +58,9 @@ belongs to a different region).
 This requires solving a system of 2 linear equations. The only complications are that we need to check that the solution 
 is positive and integer-valued, and for part b, because the solutions can be very large we need to use 64-bit integers.
 
+## Day 14
+
+For part b, plotting a hundred or so examples shows that in some cases the robots are not evenly distributed but mostly in 
+one half of the plot vertically or horizontally. Therefore I guessed that the Christmas tree must appear in one of these cases. 
+I plotted the cases where the distribution was significantly different in the 2 vertical or horizontal halves, and checked them 
+manually.
