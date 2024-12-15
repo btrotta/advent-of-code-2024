@@ -64,3 +64,10 @@ For part b, plotting a hundred or so examples shows that in some cases the robot
 one half of the plot vertically or horizontally. Therefore I guessed that the Christmas tree must appear in one of these cases. 
 I plotted the cases where the distribution was significantly different in the 2 vertical or horizontal halves, and checked them 
 manually.
+
+## Day 15
+
+For part b, we need to treat horizontal and vertical moves differently. A horizontal move still can move only a single row
+of boxes, but a vertical move can move a block of boxes, not just a single column, since boxes in adjacent rows can have 
+overlapping horizontal dimension. So for each potential vertical move, we need to check that all boxes in the leading edge of the moving block
+have a space to move into.
