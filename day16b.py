@@ -1,6 +1,6 @@
 from utilities import *
 import time
-t = time.time()
+
 arr = parse_multi_string(False, "")
 
 j = complex(0, 1)
@@ -94,4 +94,3 @@ for i, p in enumerate(shortest_paths):
     for k, node in enumerate(p):
         on_shortest_paths.add(node[0])
 print(len(on_shortest_paths))
-print(time.time() - t)
