@@ -71,3 +71,7 @@ For part b, we need to treat horizontal and vertical moves differently. A horizo
 of boxes, but a vertical move can move a block of boxes, not just a single column, since boxes in adjacent rows can have 
 overlapping horizontal dimension. So for each potential vertical move, we need to check that all boxes in the leading edge of the moving block
 have a space to move into.
+
+## Day 16
+For part a, we can use Dijkstra's algorithm to find a shortest path. Since changing direction has a cost, we consider a "node" of 
+the graph to be a pair `(location, direction)`. For part b, we need to modify the algorithm to find all paths.
