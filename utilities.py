@@ -85,33 +85,31 @@ def shortest_path(edge_dict, from_node, to_node):
     # Dijkstra's algorithm using priority queue.
     nodes = list(edge_dict.keys())
     tentative_dist = []
-    to_visit = {}  # map unvisited nodes to corresponding member of tentative_dist
+    visited = set()
     for i, n in enumerate(nodes):
         if n == from_node:
             tentative_dist.append([0, from_node])
         else:
             tentative_dist.append([np.inf, n])
-        to_visit[n] = tentative_dist[i]
     heapq.heapify(tentative_dist)
     dist_map = {n: np.inf for n in nodes}
     dist_map[from_node] = 0
-    while len(to_visit) > 0:
+    while len(tentative_dist) > 0:
         dist, node = heapq.heappop(tentative_dist)
-        if node not in to_visit:
+        if node in visited:
             continue
         for neighbour in edge_dict[node]:
-            if neighbour in to_visit:
+            if neighbour not in visited:
                 new_dist = dist_map[node] + edge_dict[node][neighbour]
                 if new_dist < dist_map[neighbour]:
                     # Add a new queue member with the shorter distance. We don't need to
                     # delete the old member because it has lower priority than the new one.
                     new_queue_member = [new_dist, neighbour]
                     heapq.heappush(tentative_dist, new_queue_member)
-                    to_visit[neighbour] = new_queue_member
                     dist_map[neighbour] = new_dist
         if node == to_node:
             break
-        to_visit.pop(node)
+        visited.add(node)
     return dist_map[to_node]
 
 
