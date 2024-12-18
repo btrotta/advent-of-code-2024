@@ -81,3 +81,7 @@ For part b, I don't think there's a general algorithmic solution. I solved it by
 of the program and writing it as a simple function, which allowed me to automate the search for the answer. But my solution 
 depends a lot on specifics of the program (e.g. that it only ever jumps from the end to the start), so I don't know how
 generalisable this is.
+
+## Day 18
+Use breadth-first search to find shortest paths. For part b, after adding a block, if it the block does not lie on the current shortest 
+path we do not need to run the path-finding algorithm again since the current path will still work.
