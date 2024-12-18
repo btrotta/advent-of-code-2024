@@ -75,3 +75,9 @@ have a space to move into.
 ## Day 16
 For part a, we can use Dijkstra's algorithm to find a shortest path. Since changing direction has a cost, we consider a "node" of 
 the graph to be a pair `(location, direction)`. For part b, we need to modify the algorithm to find all paths.
+
+## Day 17
+For part b, I don't think there's a general algorithmic solution. I solved it by figuring out by hand the operation 
+of the program and writing it as a simple function, which allowed me to automate the search for the answer. But my solution 
+depends a lot on specifics of the program (e.g. that it only ever jumps from the end to the start), so I don't know how
+generalisable this is.
