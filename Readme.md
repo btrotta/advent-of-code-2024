@@ -83,5 +83,5 @@ depends a lot on specifics of the program (e.g. that it only ever jumps from the
 generalisable this is.
 
 ## Day 18
-Use breadth-first search to find shortest paths. For part b, after adding a block, if it the block does not lie on the current shortest 
+Use breadth-first search to find shortest paths. For part b, after adding a block, if the block does not lie on the current shortest 
 path we do not need to run the path-finding algorithm again since the current path will still work.
