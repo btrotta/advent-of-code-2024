@@ -85,3 +85,7 @@ generalisable this is.
 ## Day 18
 Use breadth-first search to find shortest paths. For part b, after adding a block, if the block does not lie on the current shortest 
 path we do not need to run the path-finding algorithm again since the current path will still work.
+
+## Day 19
+For part a, use depth-first search. For part b, use dynamic programming to recursively calculate the number of ways of 
+making the first `n` colours of the design.
