@@ -95,3 +95,17 @@ For part a, use bread-first search to create a dictionary of distances from the 
 of distances from the end to any wall. This can be done with only 2 iterations of the search algorithm. For part b, 
 create similar dictionaries, but instead measure distances from the start/end to points _adjacent_ to a wall. For any 2 
 such points, the shortest cheat between them is given by the Manhattan distance.
+
+## Day 21
+Note that the number of keypads is one more than the number of robot arms. For part a, simulate the effects of button presses
+on the person's keypad and use breadth-first search to find the shortest sequence that enters each character of the code. We 
+can do a separate search for each character because we know the positions of the robot arms after a button press (they must be `A, A, x`, where 
+`x` is the numeric button pressed). For part b this approach is no longer feasible so we use a recursive approach to calculate the length
+of the shortest sequence of button presses to press a desired button on any keypad in the list. We again make use of the 
+fact that after a robot arm presses a button of a keypad, all arms of robots earlier in the list must point to `A` on their keypads. 
+We cache results to speed up the calculation.
+
+
+## Day 22
+For part b, iterate over the sequences of prices and diffs for each buyer, and create a dict mapping distinct sequences of 4 diffs to 
+the price at their first occurrence. Then aggregate these dicts to get the totals over all buyers for each sequence.
