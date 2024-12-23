@@ -109,3 +109,10 @@ We cache results to speed up the calculation.
 ## Day 22
 For part b, iterate over the sequences of prices and diffs for each buyer, and create a dict mapping distinct sequences of 4 diffs to 
 the price at their first occurrence. Then aggregate these dicts to get the totals over all buyers for each sequence.
+
+
+## Day 23
+For part b, use an iterative approach. The list of cliques of size 2 is just the set of edges. Given the list of cliques 
+of size `n`, find the cliques of size `n + 1` by iterating over the cliques and checking nodes connected to a node in the 
+clique.
+
