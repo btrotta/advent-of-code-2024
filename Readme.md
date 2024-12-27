@@ -91,7 +91,7 @@ For part a, use depth-first search. For part b, use dynamic programming to recur
 making the first `n` colours of the design.
 
 ## Day 20
-For part a, use bread-first search to create a dictionary of distances from the start to any wall, and another dictionary 
+For part a, use breadth-first search to create a dictionary of distances from the start to any wall, and another dictionary 
 of distances from the end to any wall. This can be done with only 2 iterations of the search algorithm. For part b, 
 create similar dictionaries, but instead measure distances from the start/end to points _adjacent_ to a wall. For any 2 
 such points, the shortest cheat between them is given by the Manhattan distance.
