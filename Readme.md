@@ -116,3 +116,12 @@ For part b, use an iterative approach. The list of cliques of size 2 is just the
 of size `n`, find the cliques of size `n + 1` by iterating over the cliques and checking nodes connected to a node in the 
 clique.
 
+
+## Day 24
+For part b, I did some automated checks to see which bits seemed to have problems, then just solved in manually. In the 
+correct circuit, each bit's input has the same structure, so by comparing with a correct bit, it's possible to identify 
+the wrong connections.
+
+
+## Day 25
+Note that the question asks for _unique_ pairs.
