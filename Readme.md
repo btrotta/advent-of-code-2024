@@ -118,7 +118,7 @@ clique.
 
 
 ## Day 24
-For part b, I did some automated checks to see which bits seemed to have problems, then just solved in manually. In the 
+For part b, I did some automated checks to see which bits seemed to have problems, then just solved it manually. In the 
 correct circuit, each bit's input has the same structure, so by comparing with a correct bit, it's possible to identify 
 the wrong connections.
 
